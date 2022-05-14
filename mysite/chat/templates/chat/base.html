@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="room-name-input">Id room</label><br>
+    <input id="room-name-input" type="text" size="100"><br>
+    <label for="username">Name</label><br>
+    <input id ="username"><br>
+    <button id="btn-join">Join Room</button>
+    <script>
+        document.getElementById('btn-join').onclick = function(e) {
+            var roomName = document.getElementById('room-name-input').value;
+            var Name = document.getElementById('username').value;
+            window.location.pathname = '/' + roomName + '/' + Name + '/' ;
+        };
+    </script>
+
+</body> 
+</html>
